@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5rem; /* 'rem' means size relative to root element */
+}
+
+header, footer {    
+    background-color: #333333;
+    color: white;
+    padding: 10px;    
+    text-align: center;
+    font-size: 20px;        
+}
+
+main{
+    width: 400px;
+    margin: auto;
+}
+
+main h1 {
+    margin: 20px 0;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    box-shadow: 0 0 30px #333333;
+}
+
+section {
+    margin: 20px 0;
+    background-color: #DCDCDC;
+    padding: 20px;
+}
+
+section h2 {  
+    padding-bottom: 5px;  
+    border-bottom: 1px solid #333333;
+    margin-bottom: 10px;
+}
+
+section p {
+    padding: 5px;
+    text-align: left;
+    font-size: 15px;
+}
+
+section ul {
+    padding-left: 20px;
+    font-size: 15px;
+    width: 320px;
+}
+
+footer {    
+    font-size: 15px;    
+}
