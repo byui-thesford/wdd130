@@ -1,10 +1,14 @@
 :root {
     --general-color: darkblue;
     --color: black;
-    --text-align: center;
-    --aside-rem: 1rem;
+    --text-align: center;    
     --border: 1px solid;
     --height: auto;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 nav {
     background-color: var(--general-color);
@@ -17,9 +21,10 @@ nav a {
 }
 main {
     max-width: 840px;
+    padding: 1rem;
 }
 h1 {
-    color: var(--general-color);
+    color: var(--general-color);    
 }
 main img {
     width: 150px;
@@ -27,20 +32,23 @@ main img {
     border: var(--border) var(--color);
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    float: right;
 }
 p {    
     padding: 0;
 }
 aside {
-    width: 20rem; /* This is a length value, relative to the root font size i.e. 20 * 16px = 320px */
-    margin: var(--aside-rem);
-    border: var(--border) rgba(0 0 0 / 0.2);
-    padding: var(--aside-rem);
-    background-color: #eee;
-    color: var(--border-color);    
+    width: 20rem; /* This is a length value, relative to the root font size i.e. 20 * 16px = 320px */    
     text-align: var(--text-align);
+    position: relative;
 }
-aside img {
+aside h2 {
+    position: absolute;
+    top: 20px;    
+    left: 115px;
+    color: aliceblue;
+}
+aside img {    
     width: 200px;    
     height: var(--height);
 }
@@ -48,4 +56,16 @@ footer {
     margin-top: 15px;
     border-top: var(--border) var(--color);
     text-align: var(--text-align);
+}
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid rgba(0 0 0 / 10%);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
+}
+.right-space {
+    padding: 2rem;
 }
