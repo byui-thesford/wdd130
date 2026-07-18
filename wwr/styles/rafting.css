@@ -53,10 +53,11 @@ article {
     position: absolute;
     bottom: var(--pixel-spacing-2);
     width: var(--width-ratio);
-    text-align: center;
-    font-size: medium;
+    text-align: left;
+    font-size: 14px;
     background-color: var(--accent2-color);
     color: var(--secondary-color);
+    padding-top: 1px;
 }
 section {
     margin-top: var(--pixel-spacing-2);
@@ -65,7 +66,7 @@ section h2 {
     background-color: var(--accent1-color);
     width: var(--width-ratio);
     padding: 8px;
-    text-align: center;    
+    text-align: center;
     font-size: large;
 }
 footer {
@@ -88,7 +89,7 @@ footer p {
 .hero article img {
     float: right;
     margin: 12px 12px 0 0;    
-    width: 90px;
+    width: 86px;
     border: 1px solid var(--secondary-color);
 }
 .socialmedia a {    
