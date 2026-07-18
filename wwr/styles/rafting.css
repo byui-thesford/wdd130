@@ -1,0 +1,96 @@
+:root {
+    --primary-color: #fff2cc;   /* pale yellow */
+    --secondary-color: #000;    /* black */
+    --accent1-color: #990000;   /* deep red */
+    --accent2-color: #f1c232;   /* golden yellow */
+    --heading-font: Georgia, Times New Roman, sans-serif;    
+    --body-font: Verdana, Arial, sans-serif;
+    --pixel-spacing-1: 16px;
+    --pixel-spacing-2: 20px;
+    --width-ratio: 100%
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--body-font);
+    color: var(--secondary-color);
+    font-size: small;
+}
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
+header img {
+    margin-top: 15px;
+}
+header nav {
+    margin: 5px 0 var(--pixel-spacing-1) 12px;
+}
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-size: 36px;
+}
+p {
+    margin: var(--pixel-spacing-1);
+    padding: 8px;
+}
+h1 {
+    position: absolute;
+    top: var(--pixel-spacing-2);
+    width: var(--width-ratio);
+    padding: var(--pixel-spacing-1);
+    text-align: center;    
+    opacity: 0.9;
+    background-color: var(--accent1-color);
+    color: var(--primary-color);;    
+    /* white text – make sure there is enough contrast with the background-color */
+}
+article {
+    position: absolute;
+    bottom: var(--pixel-spacing-2);
+    width: var(--width-ratio);
+    text-align: center;
+    font-size: medium;
+    background-color: var(--accent2-color);
+    color: var(--secondary-color);
+}
+section {
+    margin-top: var(--pixel-spacing-2);
+}
+section h2 {
+    background-color: var(--accent1-color);
+    width: var(--width-ratio);
+    padding: 8px;
+    text-align: center;    
+    font-size: large;
+}
+footer {
+    margin-top: 15px;
+    border-top: 1px dotted grey;    
+}
+footer p {
+    margin: 0;
+}
+
+/* Class selectors */
+.hero {
+    position: relative;
+}
+.hero img {
+    display: block;
+    width: var(--width-ratio);
+    height: auto;
+}
+.hero article img {
+    float: right;
+    margin: 12px 12px 0 0;    
+    width: 90px;
+    border: 1px solid var(--secondary-color);
+}
+.socialmedia a {    
+    text-decoration: none;
+}
