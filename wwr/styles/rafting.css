@@ -46,8 +46,8 @@ h1 {
     text-align: center;    
     opacity: 0.9;
     background-color: var(--accent1-color);
-    color: var(--primary-color);;    
-    /* white text – make sure there is enough contrast with the background-color */
+    color: var(--primary-color);
+    /* light text – make sure there is enough contrast with the background-color */
 }
 article {
     position: absolute;
@@ -78,6 +78,7 @@ footer p {
 }
 
 /* Class selectors */
+
 .hero {
     position: relative;
 }
