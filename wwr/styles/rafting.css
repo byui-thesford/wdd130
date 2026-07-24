@@ -167,8 +167,7 @@ footer p {
 
 .adventure {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    align-items: center;    
+    align-items: center;
     justify-content: space-between;
 }
 
