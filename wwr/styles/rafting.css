@@ -9,35 +9,46 @@
     --pixel-spacing-2: 20px;
     --width-ratio: 100%
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: var(--body-font);
     color: var(--secondary-color);
     font-size: small;
 }
+
 header, main, footer {
     width: 840px;
     margin: 0 auto;
 }
+
+header {
+    display: grid;
+    grid-template-columns: 180px 1fr 14px;
+    background-color: #f1c232;    
+    align-items: center;
+}
+
 header img {
-    margin-top: 15px;
+    margin: 17px 57px;
 }
-header nav {
-    margin: 5px 0 var(--pixel-spacing-1) 12px;
-}
+
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
     font-size: 36px;
 }
+
 p {
     margin: var(--pixel-spacing-1);
     padding: 8px;
 }
+
 h1 {
     position: absolute;
     top: var(--pixel-spacing-2);
@@ -49,6 +60,7 @@ h1 {
     color: var(--primary-color);
     /* light text – make sure there is enough contrast with the background-color */
 }
+
 article {
     bottom: var(--pixel-spacing-2);
     width: var(--width-ratio);
@@ -58,9 +70,11 @@ article {
     color: var(--secondary-color);
     padding-top: 1px;
 }
+
 section {
     margin-top: var(--pixel-spacing-2);
 }
+
 section h2 {
     background-color: var(--accent1-color);
     width: var(--width-ratio);
@@ -68,33 +82,59 @@ section h2 {
     text-align: center;
     font-size: large;
 }
+
 footer {
     margin-top: 15px;
     border-top: 1px dotted grey;    
 }
+
 footer p {
     margin: 0;
 }
 
 /* Class selectors */
 
+.navigation {
+    display: flex;
+    list-style: none;
+    background-color: var(--primary-color);
+    margin: 50px;
+}
+
+.navigation li {
+    flex: 1 1 auto;
+}
+
+.navigation a {
+    display: block;    
+    color: var(--secondary-color);
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
+    text-decoration: none;
+    text-align: center;
+}
+
 .hero {
     position: relative;
 }
+
 .hero img {
     display: block;
     width: var(--width-ratio);
     height: auto;
 }
+
 .hero article {
     position: absolute;
 }
+
 .hero article img {
     float: right;
     margin: 12px 12px 0 0;    
     width: 86px;
     border: 1px solid var(--secondary-color);
 }
+
 .socialmedia a {    
     text-decoration: none;
 }
