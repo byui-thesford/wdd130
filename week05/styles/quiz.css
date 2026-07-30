@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    color: blue;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EEEEEE;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+label span {
+    color: darkblue;
+    font-weight: 700;
+}
+
+input, textarea, select {   
+    min-height: 30px;
+    width: 500px;
+}
+
+textarea {
+    height: 100px;
+}
+
+code {
+    display: block;
+    background-color: #333333;
+    color: white;
+    max-width: 75%;
+    margin: 10px auto;
+    padding: 10px;
+
+}
+
+button {
+    display: block;
+    align-items: center;
+    background-color: darkblue;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    width: 500px;
+    border-radius: 5px;   
+}
+
+/* Class selectors */
+
+.box-spacing {
+    margin: 5px;
+    padding: 10px;
+}
