@@ -33,6 +33,22 @@ header img {
     margin: 11px 57px;
 }
 
+footer {
+    margin-top: 15px;
+    padding: 7px;
+    background-color: var(--accent2-color);
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    align-items: center;
+}
+
+footer p {
+    margin: 15px 30px;
+    justify-content: space-around;
+}
+
+/* CONTACT US - Start */
+
 textarea {
     margin-left: 25px;
     width: 365px;
@@ -43,34 +59,8 @@ input[type="checkbox"] {
     margin-right: 8px;
 }
 
-button {
-    width: 230px;    
-    margin: 4px;
-    background-color: navy;
-    color: #fff;
-    border: none;
-    border-radius: .5rem;
-    padding: .75rem;
-    font-size: 1.1rem;
-}
+/* CONTACT US - End */
 
-button:hover {
-    background-color: darkred;
-}
-
-footer {
-    margin-top: 15px;
-    padding: 7px;
-    background-color: var(--accent2-color);
-    display: grid;
-    grid-template-columns: 1fr 200px;    
-    align-items: center;
-}
-
-footer p {
-    margin: 15px 30px;
-    justify-content: space-around;    
-}
 
 /* Class selectors */
 
@@ -94,7 +84,6 @@ footer p {
     text-align: center;
 }
 
-/* body { */
 .about {
     font-family: var(--body-font);
     color: var(--secondary-color);
@@ -153,21 +142,21 @@ footer p {
     text-align: center;
 }
 
-.hero {
+.about-hero {
     position: relative;
 }
 
-.hero img {
+.about-hero img {
     display: block;
     width: var(--width-ratio);
     height: auto;
 }
 
-.hero article {
+.about-hero article {
     position: absolute;
 }
 
-.hero article img {
+.about-hero article img {
     float: right;
     margin: 12px 12px 0 0;    
     width: 86px;
@@ -311,6 +300,21 @@ footer p {
 .button-container {
     display: flex;
     justify-content: center;
+}
+
+.button-contact {
+    width: 230px;
+    margin: 4px;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.1rem;
+}
+
+.button-contact:hover {
+    background-color: darkred;
 }
 
 .employees {
