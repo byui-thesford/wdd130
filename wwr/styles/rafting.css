@@ -38,7 +38,7 @@ footer {
     padding: 7px;
     background-color: var(--accent2-color);
     display: grid;
-    grid-template-columns: 1fr 200px;
+    grid-template-columns: 1fr 190px;
     align-items: center;
 }
 
@@ -83,6 +83,229 @@ input[type="checkbox"] {
     text-decoration: none;
     text-align: center;
 }
+
+.socialmedia a {
+    display: inline-flex;
+    flex: 1 1 auto;
+    text-decoration: none;
+    margin-top: 6px;
+    margin-right: 5px;
+}
+
+/* HOME (INDEX) - Start */
+
+.home {
+    font-family: var(--body-font);
+    color: var(--secondary-color);
+    font-size: small;
+}
+
+.home h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-size: 46px;
+}
+
+.home p {
+    margin: var(--pixel-spacing-1);
+    padding: 8px;
+}
+
+.home h1 {
+    position: absolute;
+    top: var(--pixel-spacing-2);
+    width: var(--width-ratio);
+    padding: var(--pixel-spacing-1);
+    text-align: center;
+    opacity: 0.9;
+    background-color: var(--accent1-color);
+    color: var(--primary-color);    
+    /* light text – make sure there is enough contrast with the background-color */
+}
+
+.home-hero {
+    position: relative;
+}
+
+.home-hero img {
+    display: block;
+    width: var(--width-ratio);
+    height: auto;
+}
+
+.home h2 {
+    position: absolute;
+    width: var(--width-ratio);    
+    bottom: 0;
+    font-size: 28px;
+    /* border-top: var(--border) var(--secondary-color); */
+    border-bottom: var(--border) var(--primary-color);
+    text-align: center;
+    /* background-color: var(--primary-color); */
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+    padding: 20px;
+
+}
+
+.offers-1 {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    align-items: center;    
+    /* border-bottom: var(--border) var(--secondary-color); */
+    /* border-top: var(--border) var(--primary-color); */
+    background-color: var(--primary-color);
+    padding-top: 0;
+    /* padding-bottom: 20px; */
+}
+
+.offers-1 img {
+    margin-top: var(--pixel-spacing-2);
+    margin-left: 25px;
+    width: 295px;
+    border: var(--border) var(--secondary-color);    
+}
+
+.offers-1 figcaption {
+    font-family: var(--heading-font);
+    font-size: 14px;
+    margin-top: 3px;    
+    text-align: center;
+    text-indent: 25px;
+}
+
+.offers-2 {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding-top: 0;
+    padding-bottom: 18px;
+}
+
+.offers-2 img {
+    /* margin-top: var(--pixel-spacing-2); */
+    width: 295px;
+    border: var(--border) var(--secondary-color);
+}
+
+.offers-2 figcaption {
+    font-family: var(--heading-font);
+    font-size: 14px;
+    margin-top: 3px;
+    text-align: center;
+    padding-right: 25px;
+}
+
+.form-cta {
+    display: grid;
+    grid-template-columns: 420px 1fr;
+    margin-top: 0px;
+    height: 327px;    
+}
+
+.home-form {
+    height: 290px;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 20px;    
+    margin-right: 20px;
+    padding: 1rem;
+    /* border: var(--border) rgb(0 0 0 / 0.1); */
+    border: var(--border) var(--secondary-color);
+    border-radius: 0.5rem;
+    /* background-color: var(--accent2-color); */
+    background-color: skyblue;
+    display: grid;
+}
+
+.home-sign-up-pioneer {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.home-sign-up-here {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+}
+
+.home-column {
+    margin-left: 8px;
+    font-family: var(--body-font);    
+}
+
+.form-group2 input {
+    width: 350px;
+    font-size: 16px;
+    margin-bottom: 7px;
+}
+
+.home-checkbox {
+    font-size: 12px;
+}
+
+.button-subscribe {
+    width: 130px;
+    margin: 5px;
+    /* background-color: navy; */
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+    /* border: none; */
+    border-radius: .5rem;
+    /* padding: .75rem; */
+    font-size: 1rem;
+}
+
+.button-subscribe:hover {
+    background-color: var(--primary-color);
+}
+
+.home-trips {        
+    /* border-bottom: var(--border) var(--secondary-color); */
+    align-items: center;        
+    background-color: #87ceeb;
+    /* background-color: var(--accent2-color); */
+    /* background-color: var(--primary-color); */
+    width: 100%;
+}
+
+.button-trips {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    width: 360px;
+    margin-top: 15px;
+    margin-left: 25px;
+    margin-bottom: 15px;
+    background-color: #000080;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    
+}
+
+.button-trips:hover {
+    background-color: var(--accent1-color);
+}
+
+.home-trips-arrow img {
+    height: 40px;
+    width: 200px;
+}
+
+.home-footer {
+    margin-top: 0px;    
+}
+
+/* HOME (INDEX) - End */
+
+/* ABOUT US - Start */
 
 .about {
     font-family: var(--body-font);
@@ -195,12 +418,9 @@ input[type="checkbox"] {
     width: 150px;
 }
 
-.socialmedia a {
-    display: inline-flex;
-    flex: 1 1 auto;
-    text-decoration: none;
-    margin-right: 4px;    
-}
+/* ABOUT US - End */
+
+/* CONTACT US - Start */
 
 .contact section {
     margin: var(--pixel-spacing-2) 0;
@@ -305,7 +525,7 @@ input[type="checkbox"] {
 .button-contact {
     width: 230px;
     margin: 4px;
-    background-color: navy;
+    background-color: #000080;
     color: #fff;
     border: none;
     border-radius: .5rem;
@@ -314,7 +534,7 @@ input[type="checkbox"] {
 }
 
 .button-contact:hover {
-    background-color: darkred;
+    background-color: var(--accent1-color);
 }
 
 .employees {
@@ -332,3 +552,5 @@ input[type="checkbox"] {
     width: 250px;
     height: 230px;
 }
+
+/* CONTACT US - End */
