@@ -319,9 +319,10 @@ input[type="checkbox"] {
     font-size: 36px;
 }
 
-.about p {
-    margin: var(--pixel-spacing-1);
-    padding: 8px;
+.about article p {
+    margin: 16px 4px;
+    padding: 8px 8px 11px 0;
+    text-align: center;
 }
 
 .about h1 {
@@ -395,6 +396,12 @@ input[type="checkbox"] {
 
 .history h2 {
     grid-column: span 3;
+}
+
+.history p {
+    margin: var(--pixel-spacing-1);
+    padding: 8px;
+    text-align: center;
 }
 
 .history img {    
