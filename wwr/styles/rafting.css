@@ -1,6 +1,8 @@
 :root {
     --primary-color: #fff2cc;   /* pale yellow */
     --secondary-color: #000;    /* black */
+    --navy-color: #000080;      /* navy */
+    --skyblue-color: #87ceeb;   /* sky blue */
     --accent1-color: #990000;   /* deep red */
     --accent2-color: #f1c232;   /* golden yellow */
     --heading-font: Georgia, Times New Roman, sans-serif;    
@@ -213,7 +215,7 @@ input[type="checkbox"] {
     border: var(--border) var(--secondary-color);
     border-radius: 0.5rem;
     /* background-color: var(--accent2-color); */
-    background-color: #87ceeb;
+    background-color: var(--skyblue-color);
     display: grid;
 }
 
@@ -263,13 +265,9 @@ input[type="checkbox"] {
     background-color: var(--primary-color);
 }
 
-.home-trips {        
-    /* border-bottom: var(--border) var(--secondary-color); */
-    align-items: center;        
-    background-color: #87ceeb;
-    /* background-color: var(--accent2-color); */
-    /* background-color: var(--primary-color); */
-    width: 100%;
+.home-trips-link {            
+    background-color: var(--skyblue-color);    
+    width: var(--width-ratio);
 }
 
 .button-trips {
@@ -280,7 +278,7 @@ input[type="checkbox"] {
     margin-top: 15px;
     margin-left: 25px;
     margin-bottom: 15px;
-    background-color: #000080;
+    background-color: var(--navy-color);
     color: #fff;
     border: none;
     border-radius: .5rem;
@@ -540,7 +538,7 @@ input[type="checkbox"] {
 .button-contact {
     width: 230px;
     margin: 3px;
-    background-color: #000080;
+    background-color: var(--navy-color);
     color: #fff;
     border: none;
     border-radius: .5rem;
@@ -604,18 +602,18 @@ input[type="checkbox"] {
 .button-contact-float {    
     position: absolute;
     top: 48px;
-    right: 20px;
+    right: var(--pixel-spacing-2);
     text-decoration: none;    
     text-align: center;        
-    background-color: #87ceeb;
-    color: #000080;    
+    background-color: var(--skyblue-color);
+    color: var(--navy-color);
     border: none;
     border-radius: 1.5rem;
     padding: .75rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1.1rem;
     font-weight: bold;
-    border: 2px solid #333;
+    border: 2px solid var(--navy-color);
     /*border-radius: 5px; */
 
 }
@@ -639,12 +637,11 @@ input[type="checkbox"] {
     text-align: center;
     width: var(--width-ratio);
     font-size: 28px;
-    padding: 20px;   
+    padding: var(--pixel-spacing-2);
 }
 
 .trips-section-trips img {
-    width: 250px;    
-    /* padding-top: 15px; */
+    width: 250px;
     border: var(--border) var(--secondary-color);
 }
 
@@ -659,17 +656,17 @@ input[type="checkbox"] {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    padding-top: 20px;
+    padding-top: var(--pixel-spacing-2);
 }
 
 .trips-text {
-    margin: 20px;    
+    margin: var(--pixel-spacing-2);
 }
 
 .trips-section-table {    
     /* background-color: var(--primary-color); */
     position: relative;
-    /* background-color: #87ceeb; */
+    /* background-color: var(--skyblue-color); */
     overflow-x: auto;
 }
 
@@ -677,11 +674,9 @@ input[type="checkbox"] {
     position: absolute;
     top: 18px;
     left: 71px;
-    background-color: #87ceeb;
-    width: 699px;
-    /* color: var(--accent1-color); */
-    color: #000080;
-    /* border-top: var(--border) var(--secondary-color);     */
+    background-color: var(--skyblue-color);
+    width: 699px;    
+    color: var(--navy-color);    
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
     font-size: 22px;
@@ -690,7 +685,8 @@ input[type="checkbox"] {
 
 .trips-section-table img {
     display: block;
-    width: var(--width-ratio)    
+    width: var(--width-ratio);
+    height: 385px;
 }
 
 .trips-table {
